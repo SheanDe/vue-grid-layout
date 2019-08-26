@@ -210,7 +210,10 @@
                     this.eventBus.$emit("setColNum", this.colNum);
                 }
                 this.onWindowResize();
-            }
+            },
+            maxRows: function() {
+                this.eventBus.$emit("setMaxRows", this.maxRows);
+            },
         },
         methods: {
             layoutUpdate() {
